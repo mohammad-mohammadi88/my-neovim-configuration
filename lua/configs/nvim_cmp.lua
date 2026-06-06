@@ -152,9 +152,9 @@ cmp.setup({
 		{ name = "tailwindcss-colorizer-cmp" },
 	}),
 	mapping = cmp.mapping.preset.insert({
-		["<BS>"] = cmp.mapping(function()
-			smart_bs()
-		end, { "i", "s" }),
+		-- ["<BS>"] = cmp.mapping(function()
+		-- 	smart_bs()
+		-- end, { "i", "s" }),
 		["<C-b>"] = cmp.mapping.scroll_docs(-4),
 		["<C-f>"] = cmp.mapping.scroll_docs(4),
 		["<C-Space>"] = cmp.mapping.complete(),

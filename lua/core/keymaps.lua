@@ -9,6 +9,7 @@ map("n", "<leader>ss", vim.cmd.w, { desc = "Save current file" })
 map("n", "<leader>s", vim.cmd.w, { desc = "Save current file" })
 map("n", "<leader>so", vim.cmd.so, { desc = "Source current lua file " })
 map("n", "<leader>q", vim.cmd.q, { desc = "to quit current tab" })
+map("n", "<leader>qq", "<cmd>q!<CR>", { desc = "to quit current tab by force" })
 map("n", "<leader>aq", vim.cmd.qa, { desc = "to quit all tabs and neovim" })
 map("n", "<leader>sa", vim.cmd.wa, { desc = "to save add files" })
 map("n", "<C-a>", "ggVG", { desc = "to select to whole text in current tab" })
@@ -56,11 +57,11 @@ map("n", "<leader>X", "<cmd>!chmod +x %<CR>", { desc = "makes current file execu
 map("n", "<leader>x", "<cmd>!./% <CR>", { desc = "executes current file", silent = true })
 
 -- Tabs
-map("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
-map("n", "<leader>tc", "<cmd>tabclose<CR>", { desc = "Close the current tab" })
-map("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "go to next tab" })
-map("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "go to previous tab" })
-map("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "open current tab in a new tab" })
+map("n", "to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
+map("n", "tc", "<cmd>tabclose<CR>", { desc = "Close the current tab" })
+map("n", "tn", "<cmd>tabn<CR>", { desc = "go to next tab" })
+map("n", "tp", "<cmd>tabp<CR>", { desc = "go to previous tab" })
+map("n", "tf", "<cmd>tabnew %<CR>", { desc = "open current tab in a new tab" })
 
 -- Split
 map("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })

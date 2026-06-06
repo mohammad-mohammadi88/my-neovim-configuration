@@ -2,6 +2,11 @@ local conform = require("conform")
 
 conform.setup({
 	formatters = {
+		["clang-format"] = {
+			prepend_args = {
+				"--style={IndentWidth: 4, TabWidth: 4}",
+			},
+		},
 		["markdown-toc"] = {
 			condition = function(_, ctx)
 				for _, line in ipairs(vim.api.nvim_buf_get_lines(ctx.buf, 0, -1, false)) do
@@ -33,6 +38,8 @@ conform.setup({
 		graphql = { "prettier" },
 		lua = { "stylua" },
 		python = { "black" },
+		cpp = { "clang-format" },
+		c = { "clang-format" },
 		markdown = { "prettier" },
 		["markdown.mdx"] = { "prettier", "markdownlint-cli2", "markdown-toc" },
 	},
