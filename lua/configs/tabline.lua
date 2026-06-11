@@ -49,7 +49,7 @@ function _G.MyTabLine()
 		local icon = devicons.get_icon(name, ext, {
 			default = true,
 		})
-		local modified = vim.bo[buf].modified and " " or ""
+		local modified = vim.bo[buf].modified and " ●" or ""
 
 		s = s .. sep_hl .. "|" .. hl .. " " .. icon .. " " .. name .. modified .. " "
 	end
