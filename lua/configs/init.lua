@@ -1,4 +1,5 @@
 require("configs.theme")
+require("configs.dap")
 require("configs.nvim_ufo")
 require("configs.formatting")
 require("configs.luasnip_conf")
